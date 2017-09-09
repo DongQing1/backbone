@@ -1,0 +1,128 @@
+.list .header{
+	width: 100%;
+}
+.list .header .banner{
+	/*position:absolute;*/
+	overflow: hidden;
+	width: 100%;
+	position: relative;
+}
+.list .header h1{
+	position: absolute;
+	left:43px;
+	top: 22px;
+	font-size: 25px;
+	width:100%;
+	color: #eee;
+}
+.list .header .banner ul{
+	/*position: absolute;
+	top:0;
+	left: 0;
+	right: 0;*/
+	width: 600%;
+	/*height: 150px;*/
+}
+.list .banner>span{
+	position: absolute;
+    top: 13px;
+    left: 6px;
+    font-size: 37px;
+    color: #eee;
+}
+.list .banner li{
+	list-style: none;
+	float: left;
+	width: 16.66666%;
+	
+	}
+
+.list .banner li img{
+	width: 100%;
+}
+.list .inserch{
+	/*padding: 10px;*/
+	/*display: -webkit-box;*/
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform:translate(-50%,-50%);
+	width: 65%;
+	border: 1px solid green;
+	background: #fff;
+}
+.list .login{
+	position: absolute;
+	top: 12px;
+	right:10px;
+	color:#fff;
+	font-size: 18px;
+
+}
+.list .inserch input{
+	/*-webkit-box-flex: 1;*/
+	display: block;
+	border:none;
+	outline: none;
+	font-size: 14px;
+	padding: 5px;
+	position: relative;
+	width: 80%;
+	float: left;
+}
+.list .inserch span{
+	float: right;
+	width: 18%;
+}
+.list .inserch span img{
+	display: block;
+    position: absolute;
+    top: 27%;
+    left: 85%;
+    width: 8%;
+    height: 54%;
+}
+.list .nav li{
+	list-style: none;
+	float: left;
+	width: 25%;
+	font-size: 16px;
+	line-height: 30px;
+	text-align: center;
+	background: #adc885;
+	/*margin:5px;*/
+	border: 3px solid #fff;
+	box-sizing:border-box;
+	color:#fff;
+}
+.list .img-container{
+	display: -webkit-box;
+}
+
+.list .left-container,.list .right-container{
+	-webkit-box-flex: 1;
+}
+.list .left-container{
+	padding: 6px 3px 6px 6px;
+}
+.list .right-container{
+	padding: 6px 6px 6px 3px;
+}
+.list .img-container img{
+	width: 100%;
+	display: block;
+	margin-bottom: 6px;
+}
+.list .go-top{
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	width: 30px;
+	height: 30px;
+	display: none;
+}
+.list .go-top img{
+	width: 30px;
+	height: 30px;
+	
+}

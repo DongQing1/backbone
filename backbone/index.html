@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, width=device-width">
+	<title>Document</title>
+</head>
+<body>
+	<div id="app" >
+		<section class="list" id="list" style="display: none;">
+			<div class="header clear">				
+				<div class="banner">
+					<span class="go">&lt;</span><h1>美图网</h1>
+					<ul class="clear">
+						<li><img src="img/banner/01.jpg" alt=""></li>
+						<li><img src="img/banner/02.jpg" alt=""></li>
+						<li><img src="img/banner/03.jpg" alt=""></li>
+						<li><img src="img/banner/04.jpg" alt=""></li>
+						<li><img src="img/banner/05.jpg" alt=""></li>
+						<li><img src="img/banner/01.jpg" alt=""></li>
+					</ul>
+					<div class="login">登录</div>
+					<div class="inserch"><input type="text" placeholder="请输入标题、关键词搜索"><span><img src="img/icon/search-icon.png" alt=""></span></div>
+				</div>								
+			</div>			
+			<ul class="nav clear">
+				<li data-type="0">壁纸</li>
+				<li data-type="1">头像</li>
+				<li data-type="2">动漫</li>
+				<li data-type="3">明星</li>
+				<li data-type="4">风景</li>
+				<li data-type="5">宠物</li>
+				<li data-type="6">摄影</li>
+				<li data-type="7">人物</li>
+			</ul>
+			<div class="img-container">
+				<div class="left-container"></div>
+				<div class="right-container"></div>
+			</div>
+			<div class="go-top"><img src="img/icon/go-top.png" alt=""></div>
+		</section>
+		<section class="layer" id="layer"></section>
+	</div>
+	<!-- 定义大图页模板 -->
+	<script type="text/template" id="tpl_layer">
+		<div class="image-container" style="<%=style%>"><img src="<%=src%>" alt=""></div>
+		<div class="header">
+			<div class="go-back"><span class="arrow"><span class="arrow black"></span></span></div>
+			<span class="go-first">首页</span>
+			
+		</div>
+		<div class="footer"><h1><%=title%></h1></div>
+	</script>
+	<script type="text/javascript" src="js/lib/zepto.js"></script>
+	<script type="text/javascript" src="js/lib/zepto.touch.js"></script>
+	<script type="text/javascript" src="js/lib/underscore.js"></script>
+	<script type="text/javascript" src="js/lib/backbone.js"></script>
+	 <!-- <script type="text/javascript" src="js/lib/require.js" data-main="js/app.js"></script> -->
+	<!-- 入口文件是app.js -->
+	<script type="text/javascript" src="pack/pack.js"></script>
+</body>
+</html>
